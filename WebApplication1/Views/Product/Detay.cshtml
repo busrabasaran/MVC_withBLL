@@ -1,0 +1,43 @@
+﻿@model WebApplication1.Models.ProductModel
+
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detay</h2>
+
+<div>
+    <h4>ProductModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Adi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ozellikleri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ozellikleri)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fiyati)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fiyati)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
